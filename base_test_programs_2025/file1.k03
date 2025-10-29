@@ -1,18 +1,18 @@
-NAME _PROGRAM ; 
-BODY DATA INTEGER16 _AAAAAAA , _BBBBBBB , _XXXXXXX , _YYYYYYY ;
-  GET ( _AAAAAAA )
-  GET ( _BBBBBBB )
-  
-  PUT ( _AAAAAAA + _BBBBBBB )
-  PUT ( _AAAAAAA - _BBBBBBB )
-  PUT ( _AAAAAAA * _BBBBBBB )
-  PUT ( _AAAAAAA DIV _BBBBBBB )
-  PUT ( _AAAAAAA MOD _BBBBBBB )
+program pGR;
+begin var int32 aAA, bBB, xXX, yYY;
+  read (aAA)
+  read (bBB)
 
-  (_AAAAAAA - _BBBBBBB) * 10 + (_AAAAAAA + _BBBBBBB) DIV 10 =: _XXXXXXX
-  _XXXXXXX + _XXXXXXX MOD 10 =: _YYYYYYY
+  write (aAA add bBB)
+  write (aAA - bBB)
+  write (aAA mul bBB)
+  write (aAA / bBB)
+  write (aAA % bBB)
 
-  PUT ( _XXXXXXX )
-  PUT ( _YYYYYYY )
+  (aAA - bBB) mul 10 add (aAA add bBB) / 10 =: xXX
+  xXX add xXX % 10 =: yYY
 
-END
+  write (xXX)
+  write (yYY)
+
+end

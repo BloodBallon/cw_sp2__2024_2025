@@ -12,23 +12,23 @@
 
 #define USE_DFA_MINIMIZATION
 
-#define FILE1_A "../built_src/file1.hpp"
-#define FILE1_B "../built_src/file1.txt"
+#define FILE1_A "file1.hpp"
+#define FILE1_B "file1.txt"
 #define TABLE1 "transitionTable1"
 #define RN1 TOKENS_RN
 
-#define FILE2_A "../built_src/file2.hpp"
-#define FILE2_B "../built_src/file2.txt"
+#define FILE2_A "file2.hpp"
+#define FILE2_B "file2.txt"
 #define TABLE2 "transitionTable2"
 #define RN2 KEYWORDS_RN
 
-#define FILE3_A "../built_src/file3.hpp"
-#define FILE3_B "../built_src/file3.txt"
+#define FILE3_A "file3.hpp"
+#define FILE3_B "file3.txt"
 #define TABLE3 "transitionTable3"
 #define RN3 IDENTIFIERS_RN
 
-#define FILE4_A "../built_src/file4.hpp"
-#define FILE4_B "../built_src/file4.txt"
+#define FILE4_A "file4.hpp"
+#define FILE4_B "file4.txt"
 #define TABLE4 "transitionTable4"
 #define RN4 UNSIGNEDVALUES_RN
 
@@ -521,13 +521,9 @@ void removing_unreachable_DFA_states(int* dead_state, int* nextFreeState) {
                           //\0
 
 #define IDENTIFIERS_RN    "("\
-                          "_"\
-                          "(A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z)"\
-                          "(A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z)"\
-                          "(A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z)"\
-                          "(A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z)"\
-                          "(A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z)"\
-                          "(A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z)"\
+                          ""\
+                          "(a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|x|y|z)"\
+                          "(a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|x|y|z)"\
                           "(A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z)"\
                           //\0
 

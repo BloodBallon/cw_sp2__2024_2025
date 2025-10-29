@@ -12,17 +12,17 @@
 
 #define TOKENS_RE         ";|:=|=:|\\+|-|\\*|,|==|!=|:|\\[|\\]|\\(|\\)|\\{|\\}|<=|>=|[_0-9A-Za-z]+|[^ \t\r\f\v\n]"
 #define KEYWORDS_RE       ";|:=|=:|\\+|-|\\*|,|==|!=|:|\\[|\\]|\\(|\\)|\\{|\\}|NAME|DATA|BODY|END|BREAK|CONTINUE|GET|PUT|IF|ELSE|FOR|TO|DOWNTO|DO|WHILE|REPEAT|UNTIL|GOTO|DIV|MOD|<=|>=|NOT|AND|OR|INTEGER16"
-#define IDENTIFIERS_RE    "_[A-Z][A-Z][A-Z][A-Z][A-Z][A-Z][A-Z]"
+#define IDENTIFIERS_RE    "[a-z][A-Z][A-Z]"
 #define UNSIGNEDVALUES_RE "0|[1-9][0-9]*"
 
-#include "../built_src/dfa.hpp"
-#include "../built_src/matcher_by_dfa.hpp"
-#include "../built_src/file1.hpp"
-#include "../built_src/file2.hpp"
-#include "../built_src/file3.hpp"
-#include "../built_src/file4.hpp"
+#include "dfa.hpp"
+#include "matcher_by_dfa.hpp"
+#include "file1.hpp"
+#include "file2.hpp"
+#include "file3.hpp"
+#include "file4.hpp"
 
-#define DEFAULT_INPUT_FILE "../base_test_programs_2025/file1.k03"
+#define DEFAULT_INPUT_FILE "file1.k03"
 //#define DEFAULT_INPUT_FILE "../other_test_programs_2025/file4.k03"
 
 #define SUCCESS_STATE 0
